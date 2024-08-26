@@ -4,15 +4,10 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/*
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/**
 *.iws
 *.iml
 *.ipr
-.idea/cody_history.xml
 
 ### Eclipse ###
 .apt_generated
