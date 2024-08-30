@@ -10,8 +10,10 @@ public class App {
         int maxAttempts = 5;
         int totalScore = 0;
 
+
+        int randomNumber = (int) (Math.random() * (maxNumber)) + minNumber;
+
         while (true) {
-            int randomNumber = (int) (Math.random() * (maxNumber - minNumber + 1)) + minNumber;
             int attempts = 0;
             boolean guessedCorrectly = false;
 
@@ -43,7 +45,7 @@ public class App {
             System.out.println("Total Score: " + totalScore);
             System.out.print("Do you want to play another round? (yes/no): ");
             String playAgain = scanner.next().toLowerCase();
-            if (!playAgain.equals("yes")) {
+            if (!playAgain.equals("yes") && !playAgain.equals("y")) {
                 break;
             }
         }
